@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Contacto - malagadawgs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- MENU NAVEGACION -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./assets/logo.png" alt="logo" /><a href="index.html"
+              >malagadawgs</a
+            >
+          </div>
+          <a href="about.html" class="flecha"><-</a>
+          <a class="flecha">ㅤ</a>
+          <ul class="nav-links">
+            <li><a href="perros.html">PERROS</a></li>
+            <li><a href="vacunas.html">VACUNAS</a></li>
+            <li><a href="about.html">NOSOTROS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- CONTACTO  -->
+    <main class="container">
+      <h1>Contacto</h1>
+      <p>¿Tienes alguna pregunta o quieres ayudar? ¡Contáctanos!</p>
+      <form>
+        <div class="item-formulario">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="item-formulario">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="item-formulario">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <!-- LISTA ORDENADA/MOTIVOS CONTACTO -->
+      <ol class="container">
+        <h2>Motivos de contacto:</h2>
+        <li>Quiero saber más sobre los perros disponibles para adopción.</li>
+        <li>Me gustaría ser voluntario.</li>
+        <li>Quiero hacer una donación para ayudar a los perros.</li>
+        <li>
+          Tengo conocimiento de un caso de maltrato animal y quiero informarlo.
+        </li>
+        <li>He encontrado un perro perdido y quiero reportarlo.</li>
+        <li>Me gustaria resolver una duda sobre Malagadawgs.</li>
+      </ol>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 malagadawgs - Protectora Canina. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

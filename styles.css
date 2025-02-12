@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kodchasan", monospace, sans-serif, Geneva, Verdana;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MENU NAVEGACION */
+header {
+  background-color: #2d3047;
+  color: #fff;
+  padding: 0.7rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .container img {
+  width: 3rem;
+}
+
+.logo a {
+  float: right;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 5vw;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c5f3ff;
+  border-bottom: 1px solid #c5f3ff;
+}
+
+/* ESTILOS INDEX */
+
+.flecha {
+  display: none;
+}
+
+.boton-adopta {
+  display: inline-block;
+  background-color: #2d3047;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-adopta:hover {
+  background-color: #34495e;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background-image: url("./assets/perrobanner.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 430px;
+  padding: 40px;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+  flex: 1;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner h1,
+.banner p {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+main {
+  padding: 40px 0;
+}
+.main-about h2 {
+  margin-top: 2rem;
+}
+
+h1,
+h2 {
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.detalles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.detalle {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #34495e;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 40px;
+}
+
+/* ESTILOS DEL CONTACTO */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-formulario {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2d3047;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+/* ESTILOS DE PERROS */
+.perro-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.perro-card {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 31%;
+}
+
+.perro-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.perro-info {
+  padding: 0 15px 15px 15px;
+}
+
+/* ESTILOS DEL ABOUT */
+.miembros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.miembro {
+  margin-top: 10px;
+  flex-basis: 32%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.miembro img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.miembro-info {
+  padding: 15px;
+}
+
+/* ESTILOS DE VACUNAS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #2d3047;
+  color: white;
+}
+tr:nth-child(2),
+tr:nth-child(4),
+tr:nth-child(6),
+tr:nth-child(8) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #ddd;
+}
+
+/* ESTILOS RESPONSIVE */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .flecha {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+  }
+
+  .banner,
+  .detalles {
+    flex-direction: column;
+  }
+
+  .banner-content {
+    padding-right: 0;
+    margin-bottom: 50%;
+  }
+
+  .miembro {
+    flex-basis: 100%;
+  }
+}
